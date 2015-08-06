@@ -33,6 +33,13 @@
 				// Play audio
 				//
 				function playAudio(src) {
+								
+						//probando ruta src
+				if (device.platform == 'Android'){
+
+ src='/sounds/'+src;
+
+}
 					// Create Media object from src
 					my_media = new Media(src, onSuccess, onError);
 
@@ -131,6 +138,9 @@
 				<a href="#" data-role="button" onclick="playAudio('./sounds/clownhorn.mp3');">./ vocina de payaso1</a>
 				<a href="#" data-role="button" onclick="playAudio('../sounds/gosht6.mp3');">../ sonido fantasma1</a>
 				<a href="#" data-role="button" onclick="playAudio('/sounds/gosht6.mp3');">/ sonido fantasma2</a>
+				<a href="#" data-role="button" onclick="playAudio('gosht6.mp3');">/ sonido fantasma solo nombre</a>
+				<a href="#" data-role="button" onclick="playAudio('/gosht6.mp3');">/ sonido fantasma /nombre</a>
+
 				<a href="#" data-role="button" data-theme="a" onclick="pauseAudio();">Pause Playing Audio</a>
 				<a href="#" data-role="button" data-theme="b" onclick="stopAudio();">Stop Playing Audio</a>
 				<a data-role="button" data-theme="c" onclick="seekAudio(5);">Seek at 5 sec</a>
