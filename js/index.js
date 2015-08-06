@@ -11,7 +11,7 @@ function playMP3() {
 }
 
 function getMediaURL(s) {
-    if(device.platform.toLowerCase() === "android") return "/android_asset/www/" + s;
+    if(device.platform.toLowerCase() === "android") return "/sounds/" + s;
     return s;
 }
 
@@ -31,7 +31,7 @@ var path = window.location.pathname;
 
 if (device.platform == 'Android'){
 
- src='/android_asset/'+src;
+ src='/sounds/'+src;
 
  }
 
