@@ -24,7 +24,7 @@ $(document).ready(function () {
 </script> 
     </head>
     <body>
-        <button id="playMp3">Play MP3</button>
+        
         <button id="play" onclick="play_sound('audio/sound.mp3')">Play sound</button>
         
         <script type="text/javascript" src="cordova.js"></script>
