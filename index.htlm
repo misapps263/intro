@@ -8,6 +8,20 @@
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <meta name="msapplication-tap-highlight" content="no" />
         <title>Hello World</title>
+        <script type="text/javascript" charset="utf-8">
+
+$(document).ready(function () {
+    window.alert("READY!");
+    document.addEventListener("deviceready", onDeviceReady, true);
+
+    function onDeviceReady(){
+        window.alert("OK@!");
+        var snd = new Media("sounds/gosht6.mp3");
+        snd.play();
+    }
+});
+
+</script> 
     </head>
     <body>
         <button id="playMp3">Play MP3</button>
