@@ -6,7 +6,7 @@
         id        = "com.phonegap.intro"
         version   = "1.0.0">
 
-    <name>Vocales</name>
+    <name>Intro</name>
 
     <description>
        intro(3).
