@@ -16,7 +16,7 @@ $(document).ready(function () {
 
     function onDeviceReady(){
         window.alert("OK@!");
-        var snd = new Media("sounds/gosht6.mp3");
+        var snd = new Media("/android_asset/www/sounds/gosht6.mp3");
         snd.play();
     }
 });
@@ -25,7 +25,7 @@ $(document).ready(function () {
     </head>
     <body>
         
-        <button id="play" onclick="play_sound('audio/sound.mp3')">Play sound</button>
+        <button id="play" onclick="play_sound('/android_asset/www/audio/sound.mp3')">Play sound</button>
         
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
